@@ -4,7 +4,7 @@
 
 Generate protobuf
 ```bash
-docker run --rm -v $(pwd)/example:/proto -v $(pwd)/example:/out jmarkin/grpc-web-generator
+docker run --rm -v $(pwd)/example:/proto -v $(pwd)/example:/out -e 'protofile=echo.proto' jmarkin/grpc-web-generator
 ```
 
 Run request
